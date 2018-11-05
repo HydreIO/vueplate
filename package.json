@@ -1,5 +1,5 @@
 {
-  "name": "sidy.fr",
+  "name": "template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,8 +7,13 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "animejs": "^2.2.0",
+    "body-scroll-lock": "^2.5.10",
+    "dynamics.js": "^1.1.5",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",
+    "vue-mq": "^0.2.1",
+    "vue-ripple-directive": "^2.0.1",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
@@ -16,8 +21,12 @@
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-pwa": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
+    "babel-plugin-transform-imports": "1.5.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "vue-svg-loader": "^0.11.0",
     "vue-template-compiler": "^2.5.17"
   },
   "postcss": {
