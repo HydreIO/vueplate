@@ -1,4 +1,4 @@
-# sidy.fr
+# TEMPLATE
 
 ## Project setup
 ```
