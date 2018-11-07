@@ -6,12 +6,14 @@ import Ripple from 'vue-ripple-directive'
 import VueWaypoint from 'vue-waypoint'
 import Webp from '@core/webpDirective'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import Icons from '@cmp/icons.vue'
 import store from '@/store'
 import './registerServiceWorker'
 
 Vue.config.productionTip = false
 Vue.directive('webp', Webp)
 Vue.directive('rp', Ripple)
+Vue.component('fa', Icons)
 Vue.use(VueWaypoint)
 Vue.use(VueMq, {
 	breakpoints: {
