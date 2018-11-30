@@ -7,29 +7,30 @@
 </template>
 
 <script>
-export default {
-	data() {
-		return {
-			deltaX: 0,
-			deltaY: 0,
-		}
-	},
-	methods: {
-		onMove({ screenX, screenY }) {
-			if (this.lastX !== undefined && this.lastY !== undefined) {
-				this.deltaX += (this.lastX - screenX) * 0.03
-				this.deltaY += (this.lastY - screenY) * 0.03
-			}
-			this.lastX = screenX
-			this.lastY = screenY
-		},
-	},
-	mounted() {
-		window.addEventListener('mousemove', this.onMove)
-	},
-	beforeDestroy() {
-		window.removeEventListener('mousemove', this.onMove)
-	},
+import Vue from 'vue'
+import Component from 'vue-class-component'
+
+@Component
+export default class e404 extends Vue {
+    deltaX = 0
+    deltaY = 0
+
+    onMove({ screenX, screenY }) {
+        if (this.lastX !== undefined && this.lastY !== undefined) {
+            this.deltaX += (this.lastX - screenX) * 0.03
+            this.deltaY += (this.lastY - screenY) * 0.03
+        }
+        this.lastX = screenX
+        this.lastY = screenY
+    }
+
+    mounted() {
+        window.addEventListener('mousemove', this.onMove,{passive: true})
+    }
+
+    beforeDestroy() {
+        window.removeEventListener('mousemove', this.onMove)
+    }
 }
 </script>
 

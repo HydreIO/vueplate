@@ -7,17 +7,31 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "animejs": "^2.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/free-brands-svg-icons": "^5.5.0",
+    "@fortawesome/free-regular-svg-icons": "^5.5.0",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "@fortawesome/vue-fontawesome": "^0.1.2",
+    "aos": "^3.0.0-beta.6",
     "body-scroll-lock": "^2.5.10",
-    "dynamics.js": "^1.1.5",
     "register-service-worker": "^1.0.0",
+    "smoothscroll-for-websites": "^1.4.8",
     "vue": "^2.5.17",
+    "vue-class-component": "^6.3.2",
+    "vue-i18n": "^8.3.2",
     "vue-mq": "^0.2.1",
+    "vue-property-decorator": "^7.2.0",
     "vue-ripple-directive": "^2.0.1",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.1",
+    "yaml-loader": "^0.5.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@kazupon/vue-i18n-loader": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-pwa": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
@@ -27,8 +41,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-svg-loader": "^0.11.0",
-    "vue-template-compiler": "^2.5.17",
-    "vue-waypoint": "^3.2.2"
+    "vue-template-compiler": "^2.5.17"
   },
   "postcss": {
     "plugins": {
