@@ -6,13 +6,13 @@
 
 <script>
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faTimes, faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import { } from '@fortawesome/free-regular-svg-icons'
 import { } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
-library.add(faTimes)
+library.add(faTimes, faAngleUp)
 
 @Component({
   components: {
