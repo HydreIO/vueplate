@@ -29,7 +29,7 @@
     "yaml-loader": "^0.5.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
     "@babel/plugin-proposal-function-bind": "^7.0.0",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@kazupon/vue-i18n-loader": "^0.3.0",
