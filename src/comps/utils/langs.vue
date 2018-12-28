@@ -1,8 +1,8 @@
 <template lang="pug">
     .langsSelec(v-if="$mq==='lg'")
-        span(@click="changeLocale('fr')") FR
+        span(@click="changeLocale('fr')" :class="{'selected': $i18n.locale === 'fr'}") FR
         .sep
-        span(@click="changeLocale('en')") EN
+        span(@click="changeLocale('en')" :class="{'selected': $i18n.locale === 'en'}") EN
 </template>
 
 <script>
@@ -39,4 +39,9 @@ export default class LangSelect extends Vue {
     font-weight 600
     color white
     cursor pointer
+    opacity .5
+    transition opacity 300ms
+
+    &.selected
+      opacity 1
 </style>
