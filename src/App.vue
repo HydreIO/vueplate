@@ -24,10 +24,21 @@ export default class App extends Vue { }
 
 *
   sc-reset()
-  sc-disableScollBar()
   font-family 'Open Sans', sans-serif
   outline none
   scroll-behavior smooth
+
+  &::-webkit-scrollbar-track
+    box-shadow inset 0 0 6px rgba(0, 0, 0, .3)
+    background-color #555
+
+  &::-webkit-scrollbar
+    width 12px
+    background-color #F5F5F5
+
+  &::-webkit-scrollbar-thumb
+    box-shadow inset 0 0 6px rgba(0, 0, 0, .3)
+    background-color #252525
 
   a
     :active

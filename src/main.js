@@ -12,11 +12,13 @@ import SmoothScroll from 'smoothscroll-for-websites'
 import i18n from '@core/i18n'
 import '@core/misc/scrollFire' // init
 import 'aos/dist/aos.css'
+import FlatSurfaceShader from 'vue-flat-surface-shader'
 
 Vue.config.productionTip = false
 
 Vue.directive('rp', Ripple)
 Vue.component('fa', Icons)
+Vue.use(FlatSurfaceShader)
 Vue.use(VueMq, {
   breakpoints: {
     sm: 813, // iphoneX max

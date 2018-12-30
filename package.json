@@ -19,6 +19,7 @@
     "smoothscroll-for-websites": "^1.4.8",
     "vue": "^2.5.21",
     "vue-class-component": "^6.3.2",
+    "vue-flat-surface-shader": "^1.0.5",
     "vue-i18n": "^8.6.0",
     "vue-mq": "^0.2.1",
     "vue-property-decorator": "^7.2.0",
