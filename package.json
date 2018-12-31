@@ -35,13 +35,8 @@
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",
     "@kazupon/vue-i18n-loader": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.2.2",
-<<<<<<< HEAD
     "@vue/cli-plugin-pwa": "^3.2.2",
     "@vue/cli-service": "^3.2.2",
-=======
-    "@vue/cli-plugin-pwa": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
->>>>>>> 095e3a66cf45fc82aeea9d353ac03bf80afa3825
     "babel-plugin-transform-imports": "1.5.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
