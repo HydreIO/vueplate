@@ -36,7 +36,7 @@
     "@kazupon/vue-i18n-loader": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.2.2",
     "@vue/cli-plugin-pwa": "^3.2.2",
-    "@vue/cli-service": "^3.2.2",
+    "@vue/cli-service": "^3.2.3",
     "babel-plugin-transform-imports": "1.5.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
