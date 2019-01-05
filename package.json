@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
 	"name": "template",
 	"version": "0.1.0",
 	"private": true,
@@ -59,62 +58,4 @@
 		"last 2 versions",
 		"not ie <= 8"
 	]
-=======
-  "name": "template",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.12",
-    "@fortawesome/free-brands-svg-icons": "^5.6.3",
-    "@fortawesome/free-regular-svg-icons": "^5.6.3",
-    "@fortawesome/free-solid-svg-icons": "^5.6.3",
-    "@fortawesome/vue-fontawesome": "^0.1.4",
-    "aos": "^3.0.0-beta.6",
-    "body-scroll-lock": "^2.6.1",
-    "dynamics.js": "^1.1.5",
-    "register-service-worker": "^1.0.0",
-    "smoothscroll-for-websites": "^1.4.8",
-    "vue": "^2.5.21",
-    "vue-class-component": "^6.3.2",
-    "vue-flat-surface-shader": "^1.0.5",
-    "vue-i18n": "^8.7.0",
-    "vue-mq": "^0.2.1",
-    "vue-property-decorator": "^7.2.0",
-    "vue-ripple-directive": "^2.0.1",
-    "vue-router": "^3.0.2",
-    "vuex": "^3.0.1",
-    "vuex-class": "^0.3.1",
-    "yaml-loader": "^0.5.0"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.2.3",
-    "@babel/plugin-proposal-function-bind": "^7.2.0",
-    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
-    "@kazupon/vue-i18n-loader": "^0.3.0",
-    "@vue/cli-plugin-babel": "^3.2.2",
-    "@vue/cli-plugin-pwa": "^3.2.2",
-    "@vue/cli-service": "^3.2.3",
-    "babel-plugin-transform-imports": "1.5.0",
-    "pug": "^2.0.3",
-    "pug-plain-loader": "^1.0.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "vue-svg-loader": "^0.11.0",
-    "vue-template-compiler": "^2.5.21"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
->>>>>>> dd02f284effbc2cb3c05549249a3f37ce2ef4452
 }
