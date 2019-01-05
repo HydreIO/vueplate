@@ -1,4 +1,6 @@
 const path = require('path')
+require('toml-require').install()
+const config = require('./hydre.toml')
 
 const aliases = {
 	cmp: 'src/comps',
@@ -7,36 +9,57 @@ const aliases = {
 	core: 'src/core',
 	rs: 'src/assets/resources',
 	svg: 'src/assets/svg',
+	root: './',
 }
 
 const registerAliases = (a, config) => Object.entries(a).forEach(([k, v]) => config.resolve.alias.set('@' + k, path.join(__dirname, v)))
-const svgLoader = config => {
-	const svgRule = config.module.rule('svg')
-	svgRule.uses.clear()
-	svgRule.use('vue-svg-loader').loader('vue-svg-loader')
+
+const loadToml = config => {
+	const rule = config.module.rule('toml')
+	rule.uses.clear()
+	rule
+		.test(/\.toml$/)
+		.use('toml')
+		.loader('toml-loader')
+		.end()
+}
+
+const loadSvg = config => {
+	const rule = config.module.rule('svg')
+	rule.uses.clear()
+	rule
+		.test(/\.svg$/)
+		.use('svg')
+		.loader('vue-svg-loader')
+		.end()
+}
+
+const loadI18n = config => {
+	const rule = config.module.rule('i18n')
+	rule
+		.resourceQuery(/blockType=i18n/)
+		.type('javascript/auto')
+		.use('i18n')
+		.loader('@kazupon/vue-i18n-loader')
+		.end()
+		.use('yaml')
+		.loader('yaml-loader')
+		.end()
 }
 
 module.exports = {
 	chainWebpack: config => {
 		registerAliases(aliases, config)
-		svgLoader(config)
-		config.module
-			.rule('i18n')
-			.resourceQuery(/blockType=i18n/)
-			.type('javascript/auto')
-			.use('i18n')
-			.loader('@kazupon/vue-i18n-loader')
-			.end()
-			.use('yaml')
-			.loader('yaml-loader')
-			.end()
+		loadI18n(config)
+		loadToml(config)
+		loadSvg(config)
 	},
 	pwa: {
 		workboxPluginMode: 'InjectManifest',
 		workboxOptions: {
 			swSrc: './src/sw.js',
 		},
-		themeColor: '#01579B',
+		themeColor: config.themeColor,
 		appleMobileWebAppCapable: 'yes',
 		iconPaths: {
 			favicon32: 'img/icons/favicon-32x32.png',
