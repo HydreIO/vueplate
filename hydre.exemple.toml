@@ -1,3 +1,4 @@
+app = 'Boilerplate'
 themeColor = '#212121'
 ogImage = 'https://URL/img/og/og-image.jpg'
 touchIconSize = '180x180'

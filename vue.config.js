@@ -9,7 +9,7 @@ const aliases = {
 	core: 'src/core',
 	rs: 'src/assets/resources',
 	svg: 'src/assets/svg',
-	root: './',
+	root: './'
 }
 
 const registerAliases = (a, config) => Object.entries(a).forEach(([k, v]) => config.resolve.alias.set('@' + k, path.join(__dirname, v)))
@@ -57,7 +57,7 @@ module.exports = {
 	pwa: {
 		workboxPluginMode: 'InjectManifest',
 		workboxOptions: {
-			swSrc: './src/sw.js',
+			swSrc: './src/sw.js'
 		},
 		themeColor: config.themeColor,
 		appleMobileWebAppCapable: 'yes',
@@ -66,10 +66,10 @@ module.exports = {
 			favicon16: 'img/icons/favicon-16x16.png',
 			appleTouchIcon: 'img/icons/apple-touch-icon.png',
 			maskIcon: 'img/icons/safari-pinned-tab.svg',
-			msTileImage: '/img/icons/mstile-150x150.png',
-		},
+			msTileImage: '/img/icons/mstile-150x150.png'
+		}
 	},
 	devServer: {
-		disableHostCheck: true,
-	},
+		disableHostCheck: true
+	}
 }
