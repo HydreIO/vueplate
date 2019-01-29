@@ -3,7 +3,7 @@
         h1(:class="$mq" ref="smile" :style="`transform: translate(${deltaX}px,${deltaY}px) rotate(60deg)`") :(
         span 404
         p The page was not found&nbsp!
-        router-link.link(:to="'/'" :class="$mq") Return Home
+        router-link.link(:to="'/'" :class="$mq" aria-label="Home") Return Home
 </template>
 
 <script>

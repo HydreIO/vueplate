@@ -13,7 +13,7 @@ fr:
     toast.cookies(v-if="show" pos="top-full")
         p(v-t="'text'")
         span(@click="accept()" v-t="'ok'")
-        router-link(to="legal" v-t="'infos'")
+        router-link(to="legal" v-t="'infos'" aria-label="Legal")
 </template>
 
 <script>
