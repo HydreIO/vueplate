@@ -6,6 +6,7 @@ import aos from 'aos'
 import Ripple from 'vue-ripple-directive'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import SmoothScroll from 'smoothscroll-for-websites'
+import FlatSurfaceShader from 'vue-flat-surface-shader'
 
 import i18n from '@core/i18n'
 import router from '@core/routes'
@@ -22,6 +23,7 @@ Vue.directive('rp', Ripple)
 
 Vue.component('fa', Icons)
 
+Vue.use(FlatSurfaceShader)
 Vue.use(Meta, { keyName: 'metas' })
 Vue.use(VueMq, {
 	breakpoints: {
