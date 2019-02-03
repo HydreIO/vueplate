@@ -108,17 +108,27 @@ Disallow:
 	await fs.writeFile('./public/robots.txt', file)
 }
 
+async function useOG() {
+	await fs.copy('./masterpicture.png', './public/img/og/og-image.jpg')
+	try {
+		await fs.copy('./og-image.jpg', './public/img/og/og-image.jpg')
+	} catch (error) {
+		console.log(error)
+	}
+}
+
 async function cleanupIcons() {
 	const runs = [
 		fs.remove('./public/img/icons/browserconfig.xml'),
 		fs.remove('./public/img/icons/site.webmanifest'),
 		fs.remove('./faviconData.json'),
 		fs.copy('./public/img/icons/favicon.ico', './public/favicon.ico'),
-		fs.copy('./masterpicture.png', './public/img/og/og-image.jpg')
+		useOG()
 	]
 	try {
 		await Promise.all(runs)
 	} catch (error) {
 		console.log('WARN: Icons cleanup failed, if you use custom icons just ignore this message')
 	}
+	console.log('Done')
 }
