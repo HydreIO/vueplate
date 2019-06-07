@@ -12,7 +12,8 @@ const aliases = {
 	root: './'
 }
 
-const registerAliases = (a, config) => Object.entries(a).forEach(([k, v]) => config.resolve.alias.set('@' + k, path.join(__dirname, v)))
+const registerAliases = (a, config) =>
+	Object.entries(a).forEach(([k, v]) => config.resolve.alias.set('@' + k, path.join(__dirname, v)))
 
 const loadToml = config => {
 	const rule = config.module.rule('toml')

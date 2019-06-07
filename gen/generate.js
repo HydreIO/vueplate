@@ -55,11 +55,15 @@ async function genHtml(conf) {
 		<meta name="twitter:creator" content="${conf.tw[2].content}" />
 
 		<link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-		<link rel="apple-touch-icon" sizes="${conf.touchIconSize}" href="<%= BASE_URL %>img/icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="${
+			conf.touchIconSize
+		}" href="<%= BASE_URL %>img/icons/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>img/icons/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>img/icons/favicon-16x16.png" />
 		<link rel="manifest" href="<%= BASE_URL %>manifest.json" />
-		<link rel="mask-icon" href="<%= BASE_URL %>img/icons/safari-pinned-tab.svg" color="${conf.maskIconColor}" />
+		<link rel="mask-icon" href="<%= BASE_URL %>img/icons/safari-pinned-tab.svg" color="${
+			conf.maskIconColor
+		}" />
 		<link rel="shortcut icon" href="<%= BASE_URL %>favicon.ico" />
 		<meta name="msapplication-TileColor" content="${conf.tileColor}" />
 		<meta name="msapplication-TileImage" content="<%= BASE_URL %>img/icons/mstile-150x150.png" />
