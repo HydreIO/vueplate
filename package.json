@@ -6,7 +6,8 @@
 		"serve": "vue-cli-service serve",
 		"build": "npm run icons && npm run gen && vue-cli-service build",
 		"gen": "babel-node --config-file ./.babelrc.hydre gen/generate.js",
-		"icons": "real-favicon generate faviconDescription.json faviconData.json public/img/icons/"
+		"icons": "real-favicon generate faviconDescription.json faviconData.json public/img/icons/",
+		"postversion": "git push && git push --tags"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.19",
@@ -16,6 +17,7 @@
 		"@fortawesome/vue-fontawesome": "^0.1.6",
 		"aos": "^3.0.0-beta.6",
 		"body-scroll-lock": "^2.6.1",
+		"@hydre/commons": "^1.0.18",
 		"dynamics.js": "^1.1.5",
 		"fs-extra": "^7.0.1",
 		"register-service-worker": "^1.6.2",
