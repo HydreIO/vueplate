@@ -6,7 +6,7 @@ import aos from 'aos'
 import Ripple from 'vue-ripple-directive'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import SmoothScroll from 'smoothscroll-for-websites'
-import FlatSurfaceShader from 'vue-flat-surface-shader'
+import toasted from 'vue-toasted'
 
 import i18n from '@core/i18n'
 import router from '@core/routes'
@@ -14,7 +14,7 @@ import store from '@core/stores'
 import Icons from '@cmp/utils/icons.vue'
 
 import './registerServiceWorker'
-import '@core/misc/scrollFire' // init
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false
@@ -23,7 +23,13 @@ Vue.directive('rp', Ripple)
 
 Vue.component('fa', Icons)
 
-Vue.use(FlatSurfaceShader)
+Vue.use(toasted, {
+	position: 'bottom-center',
+	duration: 4000,
+	closeOnSwipe: true,
+	containerClass: 'toasts'
+})
+
 Vue.use(Meta, { keyName: 'metas' })
 Vue.use(VueMq, {
 	breakpoints: {

@@ -1,5 +1,5 @@
 <template lang="pug">
-    .langsSelec(v-if="$mq==='lg'")
+    .langsSelec
         span(@click="changeLocale('fr')" :class="{'selected': $i18n.locale === 'fr'}") FR
         .sep
         span(@click="changeLocale('en')" :class="{'selected': $i18n.locale === 'en'}") EN
@@ -24,11 +24,7 @@ export default class LangSelect extends Vue {
   flex-flow row nowrap
   justify-content space-evenly
   width 100px
-  position fixed
-  top 50%
-  z-index 99
   opacity .6
-  transform rotate(-90deg) translateY(-25px)
 
   .sep
     width 1px

@@ -1,5 +1,5 @@
 <template lang="pug">
-    main.app
+    main.app(:class="$mq")
       router-view
       utils
 </template>
@@ -41,9 +41,9 @@
 					...tw
 				],
 				link: [
-					{ rel: 'apple-touch-icon', sizes: config.touchIconSize, href: '<%= BASE_URL %>img/icons/apple-touch-icon.png' },
-					{ rel: 'mask-icon', href: '<%= BASE_URL %>img/icons/safari-pinned-tab.svg', color: config.maskIconColor }
-				]
+					{ rel: 'apple-touch-icon', sizes: config.touchIconSize, href: `${process.env.BASE_URL}img/icons/apple-touch-icon.png` },
+					{ rel: 'mask-icon', href: `${process.env.BASE_URL}img/icons/safari-pinned-tab.svg`, color: config.maskIconColor }
+				],
 			}
 		}
 	})
@@ -53,14 +53,14 @@
 
 <style lang="stylus">
 @require '~@stl/utils'
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800')
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,500,700,900')
 
 :root
 	font-size 18px
 
 *
 	sc-reset()
-	font-family 'Open Sans', sans-serif
+	font-family 'Barlow', sans-serif
 	outline none
 	scroll-behavior smooth
 
@@ -81,7 +81,22 @@
 			color #e1c79b
 			fill #e1c79b
 
-main.app
-	min-width 1000px
-</style>
+.toasted
+	padding .5em 1em !important
 
+	i
+		color #1E88E5
+
+	&.error
+		i
+			color white
+
+main.app
+	&.lg
+		background #222222 url('~@rs/pattern.png')
+		min-width 1000px
+		min-height 800px
+
+	&.sm
+		sc-disableScollBar()
+</style>
