@@ -41,6 +41,7 @@
 					...tw
 				],
 				link: [
+					{ rel: "stylesheet", href: 'https://fonts.googleapis.com/css?family=Barlow:300,500,700,900' },
 					{ rel: 'apple-touch-icon', sizes: config.touchIconSize, href: `${process.env.BASE_URL}img/icons/apple-touch-icon.png` },
 					{ rel: 'mask-icon', href: `${process.env.BASE_URL}img/icons/safari-pinned-tab.svg`, color: config.maskIconColor }
 				],
@@ -53,7 +54,6 @@
 
 <style lang="stylus">
 @require '~@stl/utils'
-@import url('https://fonts.googleapis.com/css?family=Barlow:300,500,700,900')
 
 :root
 	font-size 18px
