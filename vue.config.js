@@ -49,6 +49,7 @@ const loadI18n = config => {
 }
 
 module.exports = {
+	productionSourceMap: false,
 	chainWebpack: config => {
 		registerAliases(aliases, config)
 		loadI18n(config)
