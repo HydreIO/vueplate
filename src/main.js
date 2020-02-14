@@ -20,7 +20,6 @@ import 'aos/dist/aos.css'
 Vue.config.productionTip = false
 
 Vue.directive('rp', Ripple)
-
 Vue.component('fa', Icons)
 
 Vue.use(toasted, {
