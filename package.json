@@ -56,7 +56,7 @@
 		"@babel/preset-env": "^7.8.4",
 		"@kazupon/vue-i18n-loader": "^0.5.0",
 		"@vue/cli-plugin-babel": "^4.2.2",
-		"@vue/cli-plugin-pwa": "^4.2.2",
+		"@vue/cli-plugin-pwa": "^4.3.1",
 		"@vue/cli-service": "^4.2.2",
 		"babel-plugin-hash-resolve": "^1.0.2",
 		"babel-plugin-implicit-function": "^0.1.1",
