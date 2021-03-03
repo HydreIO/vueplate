@@ -64,7 +64,7 @@
 		"babel-plugin-wildcard": "^6.0.0",
 		"cli-real-favicon": "^0.0.8",
 		"material-design-icons-iconfont": "^6.1.0",
-		"pug": "^3.0.0",
+		"pug": "^3.0.1",
 		"pug-plain-loader": "^1.1.0",
 		"stylus": "^0.54.8",
 		"stylus-loader": "^4.3.3",
